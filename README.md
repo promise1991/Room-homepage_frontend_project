@@ -1,100 +1,106 @@
-# Room Homepage
+<div align="center">
 
-## Welcome ✌🏻
+<h1> Jobhunty • Job Search Platform </h1>
+<p>JobHuntly is a modern job search landing page designed to <br> connect job seekers with top employers. It offers smooth scrolling, dynamic job listings, <br> and a clean, responsive UI for an enhanced user experience.</p>
 
-## Table of Contents
+<br/>
 
-- [Overview](#overview)
-  - [The Challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My Process](#my-process)
-  - [Built With](#built-with)
-  - [What I Learned](#what-i-learned)
-  - [Continued Development](#continued-development)
-  - [Useful Resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
-- [Got Feedback for Me?](#got-feedback-for-me)
+[![Live Demo](https://img.shields.io/badge/-Live%20Demo-4640DE?style=for-the-badge&logo=vercel&logoColor=white)](https://job-huntly-five.vercel.app/)
 
-## Overview
 
-### The Challenge
+<br />
+</div>
 
-Explore the elegant and inviting world of interior design with the Room homepage. Discover affordable plans and captivating designs tailored to your taste.
+### Demo Screenshots
 
-Users should be able to:
+<div align="center">
+  <br />
+      <img src="https://github.com/user-attachments/assets/f35bf509-3869-4987-9e5e-118080050b93" alt="Project Banner">
+      <br />
+  <br />
+  <br />
+</div>
 
-- View the optimal layout for the site depending on their device's screen size
-- See hover states for all interactive elements on the page
+<div align="center">
+    <img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" alt="React" />
+    <img src="https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white" alt="React Router" />
+    <img src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="TailwindCSS" />
 
-### Screenshot
 
-![Design Preview](./design/active-states.jpg)
+  </div>
+  <br/>
 
-### Links
+# 🚀 Project Overview
+**JobHuntly** Landing Page is a modern, responsive website designed as the front face for a job-search platform. It provides an engaging user experience for job seekers passionate about startups and those looking for new career opportunities.
 
-- Solution URL: [GitHub Repository](https://github.com/SartHak-0-Sach/Room-homepage_frontend_project)
-- Live Site URL: [Live Site](https://room-home-page-frontend.netlify.app/)
+The landing page features smooth scrolling, dynamic job categories, trusted company highlights, and a professional, user-friendly design built using React, React Router, and Lenis for smooth animations.
 
-## My Process
 
-### Built With
+## 🌟 Features
 
-- HTML5
-- CSS3
-- JavaScript
+- Search Functionality: Users can search for jobs using keywords and location filters.
+- Dynamic Job Listings: Explore jobs categorized by roles like Full-Time, Part-Time, and Freelance opportunities.
+- Trusted Companies: Showcases brands such as Tesla, Intel, Vodafone, and more that trust the platform.
+- Featured Jobs: Highlights trending and high-paying job roles with details like salary, experience, and application count.
+- Latest Job Openings: Displays newly added positions with global locations.
+- Responsive Design: Fully optimized for all devices—desktop, tablet, and mobile.
+- Smooth Scrolling: Enhanced navigation experience powered by Lenis.
 
-You will find all the required assets in the `/design` folder. The assets are already optimized.
+## 🛠️ Tech Stack
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+- React: For building the UI components.
+- React Router v6: For routing and navigation.
+- Lenis: Smooth scrolling library for improved scroll performance.
+- Tailwind CSS: Styling the components.
 
-### What I Learned
 
-- Implementing interactive sliders for navigation
-- Creating an engaging and immersive user experience with captivating design elements
-- Enhancing accessibility and usability with hover states for interactive elements
+## 🚀 Getting Started
+To view and run this project locally, follow these steps:
 
-This snippet below one example of stuff I learnt showcasing the transition function, a crucial segment of JavaScript code involved in making this project successful.
 
-```js
-function transition() {
-    images.forEach((image, indx) => {
-        image.style.transform = `translateX(${100 * (indx - currentObj)}%)`;
-    });
-    descriptions.forEach((desc, indx) => {
-        desc.style.transform = `translateX(${100 * (indx - currentObj)}%)`;
-    });
-}
+### Prerequisites
+
+Before starting, make sure you have the following installed:
+
+- [Git](https://git-scm.com/)
+- [Node.js](https://nodejs.org/en)
+- [npm](https://www.npmjs.com/) (Node Package Manager)
+
+### Steps
+
+1. **Clone the repository:**
+
+    ```bash
+    git clone https://github.com/psparwez/JobHuntly.git
+    ```
+
+2. **Navigate to the project folder:**
+
+    ```bash
+    cd JobHuntly
+    ```
+
+3. **Install the project dependencies using npm:**
+
+    ```bash
+    npm install
+    ```
+4. **Running the Project :** 
+
+```bash
+npm run dev
 ```
 
-### Continued development
+5. Open [http://localhost:5173/](http://localhost:5173/) in your browser to view the project.
 
-The continuously learning journey of a programmer never ends. This project made me realize that there are many concepts that I need to work upon including fundamentals like flex-box and its properties, to more complex concepts like working with fetch and async await in javascript. These areas are some that I think I need to work more upon in the upcoming future as they highlight some of the most significant regions of web development that are important for every developer to know of. 
 
-These key points mentioned here will help me grow accountable and consistent towards improving at writing good quality code and be a successful full stack developer one day.
+You’re now ready to explore and customize **JobHuntly** locally!
 
-### Useful resources
+---
 
-- [Harkirat Singh course notes](https://github.com/SartHak-0-Sach/harkirat-singh-course_code_and_notes) - I have added notes of all lectures along with code and lecture insights of all weeks along with bonus lectures to help you all as much as I can.
-- [My development code and notes](https://github.com/SartHak-0-Sach/cwh-web-dev-playlist_code_and_notes) - These are my notes that I made while working on my development skills in initial days and did these courses. Make sure to star the repository if you like it.✨💫
-- [MDN documentation hover state for CSS](https://developer.mozilla.org/en-US/docs/Web/CSS/:hover) - This is an amazing article which helped me finally understand hover states. I'd recommend it to anyone still learning this concept.
 
-## Author
+### 📜 License
 
-<b><strong>Sarthak Sachdev</strong></b>
-- Website - [Sarthak Sachdev](https://itsmesarthak.netlify.app/)
-- LeetCode - [@sarthak_sachdev](https://leetcode.com/u/sarthak_sachdev/)
-- Twitter - [@sarthak_sach69](https://www.twitter.com/sarthak_sach69)
+[MIT](https://choosealicense.com/licenses/mit/)
 
-## Acknowledgments
-
-I feel like the solutions provided on the website and the continuous doubt solving by industry experts on discord for free is something that is unmatched by anyone else and need to be acknowledged for their efforts in improving me as a developer by suggesting the best practices in your respective tech stack.
-
-## Got feedback for me?
-
-I love receiving feedback! I am always looking to improve my code and take up new innovative ideas to work upon. So if you have anything you'd like to mention, please email 'hi' at saarsaach30[at]gmail[dot]com.
-
-If you liked this project make sure to spread the word and share it with all your friends.
-
-**Explore the elegant and inviting world of interior design with the Room homepage.** 🛋️🏡✨
+<br/>

@@ -1,0 +1,57 @@
+services:
+ frontend_nginx1:
+   build: .
+   ports:  
+    - "80:80"
+   container_name: static-nginx-site
+
+
+ frontend_nginx2:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    ports:
+      - "81:81"
+
+
+
+ textdb:
+    image: mongo:latest
+    container_name: text-mongo
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: text-admin
+      MONGO_INITDB_ROOT_PASSWORD: text-123!
+      MONGO_INITDB_DATABASE: IMS
+    volumes:
+      - text_mongo_data:/data/db
+    networks:
+      - text-network
+
+
+ text-mongo-express:
+    image: mongo-express
+    container_name: text-mongo-express
+    restart: always
+    ports:
+      - "8081:8081"
+    environment:
+      ME_CONFIG_MONGODB_ADMINUSERNAME: text-admin
+      ME_CONFIG_MONGODB_ADMINPASSWORD: text-123!
+      ME_CONFIG_MONGODB_SERVER: text-mongo
+        #ME_CONFIG_BASICAUTH_USERNAME: imsviewer
+        #ME_CONFIG_BASICAUTH_PASSWORD: viewpass123
+        #ME_CONFIG_OPTIONS_EDITORTHEME: default
+      ME_CONFIG_MONGODB_URL: mongodb://text-admin:text123!@textdb:27017/
+      ME_CONFIG_BASICAUTH: false
+    volumes:
+      - text_mongo_data:/data/db
+    networks:
+      - text-network
+
+volumes:
+  text_mongo_data:
+
+networks:
+  text-network:
+    driver: bridge
